@@ -1,0 +1,75 @@
+
+
+.movil-menu{
+    display: none;
+    
+    
+}
+
+.overlay {
+
+    @media (max-width: $tablet){
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;// para que tome todo el tamaño disponible 
+    height: 100%;
+
+    // para poder centrar la imagen
+
+    // Para agregar la sombra de fondo
+    background-color: rgb(0 0 0 / .5);
+
+    }
+    
+    
+}
+
+
+.movil-menu-activo {
+    background-color: $off-white;
+    display: block;
+    position: absolute;
+    width: 70%;
+    
+    height: 100%;
+    right: 0;
+    top: 0;
+
+    @include desktop{
+        display: none;
+    }
+
+
+    .cerrar-menu {
+        display: flex;
+        justify-content: flex-end;
+        margin: 3rem 3rem 3rem 0
+    }
+    .btn-cerrar {
+
+        &:hover{
+            cursor: pointer;
+        }
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .navegacion-principal-desplegable {
+
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: 10rem;
+        margin-left: 2.4rem;
+        a {
+            color: $very-dark-blue;
+
+            &:hover {
+                color: $soft-orange;
+            }
+        }
+    }
+}

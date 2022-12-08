@@ -1,0 +1,47 @@
+
+.bar-nav {
+    margin: 4rem auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    .navegacion-principal {
+       
+        display: none;
+       
+       @include desktop {
+            display: flex;
+            margin: 0;
+            column-gap: 2.5rem;
+       }
+       
+
+
+
+        a {
+            color: $dark-grayish-blue;
+
+            &:hover {
+                color: $soft-orange;
+            }
+        }
+    }
+
+
+    .icono-hamburguesa{
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        @include desktop{
+            display: none;
+        }
+        
+    }
+    
+}
+
+
+

@@ -1,0 +1,54 @@
+
+.footBar {
+
+    margin-top: 7rem;
+
+    @include desktop{
+        @include grid(3, 3rem)
+    }
+}
+
+
+.foorBar-info {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2.5rem;
+    margin-bottom: 4.5rem;
+}
+
+
+.foorBar-info-imagen {
+
+    img {
+        width: 100%;
+       
+    }
+   
+}
+
+.foorBar-info-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+
+    h2 {
+        margin-bottom: 1.7rem;
+        color: $grayish-blue;
+    }
+
+    h3 {
+        margin-bottom: 1rem;
+        font-size: 2.1rem;
+        font-weight: 800;
+        color: $very-dark-blue;
+
+        &:hover{
+            color: $Soft-red;
+        }
+    }
+    p{
+        margin-top: 0;
+        font-size: 1.8rem;
+    }
+}
